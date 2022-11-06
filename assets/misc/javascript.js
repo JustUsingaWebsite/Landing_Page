@@ -1,30 +1,42 @@
 var inputOneIsOn = false; 
 var inputTwoIsOn = false;
+var img1 = "../imgs/button-on-xxl.png";
+var img2 = "../imgs/button-off-xxl.png";
+var db1 = false;
+var db2 = false;
 
 
 function toggleImage() {
-   var img1 = "https://www.iconsdb.com/icons/preview/red/button-off-xxl.png";
-   var img2 = "https://www.iconsdb.com/icons/preview/green/button-on-xxl.png";
+   
   
    
    var imgElement = document.getElementById('toggleImage');
 
+   if (db1 == true){
 
-   imgElement.src = (imgElement.src === img1)? img2 : img1;
+        db1 = false;
+         imgElement.src = img2;
+         return;
+   }
    
-   
+   db1 = true;
+   imgElement.src = img1;
 }
 
   
 function toggleImage2() {
-   var img1 = "https://www.iconsdb.com/icons/preview/red/button-off-xxl.png";
-   var img2 = "https://www.iconsdb.com/icons/preview/green/button-on-xxl.png";
-  
    
    var imgElement = document.getElementById('toggleImage2');
 
+   if (db2 == true){
 
-   imgElement.src = (imgElement.src === img1)? img2 : img1;
+        db2 = false;
+         imgElement.src = img2;
+         return;
+   }
+   
+   db2 = true;
+   imgElement.src = img1;
    
    
 }
