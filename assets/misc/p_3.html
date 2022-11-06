@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Dorang landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Project 3:</title>
+    <link rel="icon" href=" ../imgs/placeholder.png" sizes="32x32" type="image/png">
+    <!-- font icons -->
+    <link rel="stylesheet" href="../vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Dorang main styles -->
+	<link rel="stylesheet" href="../css/dorang.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+    
+    <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <li class="nav-item"><a href="../../index.html" class="nav-link">Course</a></li>
+            <li class="nav-item"><a href="../../Projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="../../Concepts.html" class="nav-link">Concepts</a></li>
+            <li class="nav-item"><a href="../../https://www.youtube.com/watch?v=xvFZjo5PgG0" class="nav-link"><img src="../imgs/placeholder.png" alt="IDK"></a></li>
+            <li class="nav-item"><a href="../../Databases.html" class="nav-link">Databases</a></li>
+            <li class="nav-item"><a href="../../Documentation.html" class="nav-link">Documentation</a></li>
+            <li class="nav-item"><a href="../../Dev-Team.html" class="nav-link">Dev Team</a></li>
+        </ul>
+    </nav><!-- end of page navbar -->
+ 
+    <!-- page container -->
+    <div class="container page-container">
+        <div class="col-md-10 col-lg-8 m-auto">
+            <h6 class="title mb-5"></h6>
+            <h6 class="title mb-4">Binary to Hexidecimal</h6>
+            <p class="mb-5">This section only consist of one thing, the powerpoint presentation. Just click the ONLY thing on this page to be directed to such
+                powerpoint! You can also hover over the ONLY thing in this page to get a little description of the powerpoint.
+            </p>
+        </div>  
+
+        <!-- row -->
+        <div class="row mb-4">
+       
+        </div><!-- end of row -->
+
+        <table style="width:100%">
+
+            <style>
+
+                button {
+                      background-color: #cf1c1c; /* Blue */
+                      border: none;
+                      color: white;
+                      padding: 15px 32px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: 16px;
+                      margin: 4px 2px;
+                      cursor: pointer;
+                    }
+                </style>
+            
+            <p><img src="../imgs/bintohex.jpg"></p>
+         
+            <input type="number" id="inputBin" value="">
+            
+            <p>Enter any 4 digit binary number:</p>
+            
+            <button onclick="binToHex()">Submit</button>
+            
+            <p>Hexidecimal Value : </p>
+            <p id="demo"></p>
+            
+            <script>
+            function binToHex() {
+              var x = document.getElementById("inputBin").value;
+              var hexOut = parseInt(x , 2).toString(16).toUpperCase();
+              document.getElementById("demo").innerHTML = hexOut;
+              }
+            </script>
+            </table>
+
+        <a href="../../Projects.html">Return to prevoius <i class="ti-angle-double-right angle"></i></a>
+
+        </div><!-- end of container -->
+    </div><!-- end of pre footer -->
+
+   
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="../vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Dorang js -->
+    <script src="../js/dorang.js"></script>
+
+</body>
+</html>
